@@ -19,4 +19,16 @@ class StringUtil {
         
         return str1+str2
     }
+    
+    func findStinglocation(_ str:String,_ findChar:Character) -> Int {
+        
+        let location = str.characters.index(of:findChar)
+    
+        var n:Int = location!.encodedOffset
+        
+        return n
+    }
 }
+
+
+

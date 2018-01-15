@@ -11,10 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     var unitConverter:unitConvert = unitConvert()
+    var stringUtil:StringUtil = StringUtil()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("몇번째 : \(stringUtil.findStinglocation("Hello", "e"))")
         //
         print("센치를 인치로 변환 \(unitConverter.cmToInch(2))")
         //
